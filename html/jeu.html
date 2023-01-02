@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Canevas</title>
+    <link rel="icon" type="image/png" href="../media/d2.png">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Yanis Bourakba">
+</head>
+
+<body>
+    <div id="time"></div>
+    <script src="../js/script.js"></script>
+    <a href="index.html">
+        <h1>Les raids sur Destiny 2</h1>
+    </a>
+    <div class="summary">
+        <button onclick="location.href='serment.html'">Serment du disciple</button>
+        <button onclick="location.href='crypte.html'">Crypte de la pierre</button>
+        <button onclick="location.href='jardin.html'">Jardin du salut</button>
+        <button onclick="location.href='dernier.html'">Dernier voeu</button>
+    </div>
+    <a href="index.html" class="back-button">Précedent</a>
+
+    <h2>Canevas</h2>
+    <canvas id="monCanvas" width="800" height="400"></canvas>
+    <div class="gui">
+
+
+
+
+
+        <label>
+            Cacher le centre du logo :
+
+            <input type="checkbox" id="afficherCercle">
+        </label>
+        <label>
+            Cacher le reste du logo :
+
+            <input type="checkbox" id="afficherLogo">
+        </label>
+        <label>
+            Cacher les points :
+            <input type="checkbox" id="afficherPoint">
+        </label>
+        <label for="couleurCercle">Couleur du logo :</label>
+        <input type="color" id="couleurCercle" value="#ff0000">
+
+        <label for="opaciteCercle">Opacité du logo :</label>
+        <input type="range" min="0" max="1" step="0.01" value="1" id="opaciteCercle">
+        <label for="animationCercle">Animation du logo :</label>
+        <select id="animationCercle">
+            <option value="none">Aucune</option>
+            <option value="flash">Clignotement</option>
+            <option value="fade">Fade in and out</option>
+        </select>
+
+        <br>
+        <p class="explic">
+            J'ai utilisé le logiciel
+            <a href="https://www.gimp.org/">GIMP</a>  pour trouver les points de contrôle de mes courbes de degré 2. GIMP est un
+            logiciel de retouche d'images qui permet également de créer et de modifier des courbes de Bézier.
+            J'ai utilisé les outils de dessin de <a href="https://www.gimp.org/">GIMP</a> pour tracer les points de contrôle de mes courbes de degré 2.
+            Cela
+            m'a permis de visualiser la courbe en temps réel et de l'ajuster en fonction de mes besoins.
+            En utilisant <a href="https://www.gimp.org/">GIMP</a>, j'ai pu trouver les points de contrôle de mes courbes de degré 2 de manière pratique
+            et
+            intuitive. Cela m'a permis de réaliser mon projet de manière efficace et de tracer des courbes de
+            qualité.
+        </p>
+
+
+
+    </div>
+
+</body>
+
+</html>
